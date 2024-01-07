@@ -101,8 +101,9 @@ typedef enum
 /**
  * @brief Type of Modbus parameter
  */
-typedef enum {
-    MB_PARAM_HOLDING = 0x00,         /*!< Modbus Holding register. */
+typedef enum {    
+    MB_PARAM_SINGLE_HOLDING = 0x00,         /*!< Modbus Holding register. */
+    MB_PARAM_HOLDING,                /*!< Modbus Holding register. */
     MB_PARAM_INPUT,                  /*!< Modbus Input register. */
     MB_PARAM_COIL,                   /*!< Modbus Coils. */
     MB_PARAM_DISCRETE,               /*!< Modbus Discrete bits. */
